@@ -8,8 +8,15 @@
 
 #include <iostream>
 using namespace std;
+#include "namesp.h";
 
 int main() {
-	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	using debts::Debt;
+	using debts::showDebt;
+	Debt golf = {{"xie","zheng"},120.0};
+	showDebt(golf);
+	showPerson(golf.name);
 	return 0;
 }
+
+
